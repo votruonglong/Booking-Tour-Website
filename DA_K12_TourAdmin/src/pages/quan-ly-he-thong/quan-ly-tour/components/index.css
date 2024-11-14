@@ -1,0 +1,8 @@
+.small-editor .ql-container {
+    height: 50px; /* Set the desired height */
+}
+
+.small-editor .ql-toolbar {
+    border: none; /* Optional: remove the border for a cleaner look */
+    padding: 5px; /* Adjust padding */
+}

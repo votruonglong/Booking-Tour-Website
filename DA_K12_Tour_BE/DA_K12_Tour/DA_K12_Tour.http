@@ -1,0 +1,6 @@
+@DA_K12_Tour_HostAddress = http://localhost:5216
+
+GET {{DA_K12_Tour_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

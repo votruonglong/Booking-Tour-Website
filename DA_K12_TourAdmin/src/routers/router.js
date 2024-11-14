@@ -1,0 +1,25 @@
+const endPoint = {
+  ALL: "/",
+  LOGIN: "/login",
+  REGISTER: "/register",
+  DASHBOARD: "/dashboard",
+  DASHBOARDTONG: "all",
+  DASHBOARDTV: "tv",
+  DASHBOARDCHUYEN: "module",
+  DASHBOARDLOI: "error",
+  QUANLY: "/manage",
+  QUANLYSANPHAM: "product",
+  QUANLYDANHMUC: "category",
+  QUANLYMALOI: "error-code",
+  QUANLYLICHTRINH: "lichtrinh",
+  QUANLYDATTOUR: "booking",
+  QUANLYTHONGTINQAQC: "qa-qc",
+  QUANLYCONGVIEC: "task",
+  QUANLYTOUR: "tour",
+  QUANLYPHUONGTHUCTHANHTOAN: "paymentmethod",
+  KHO: "stock",
+  QUANLYSODOKHO: "map",
+  QUANLYNGUOIDUNG: "/users",
+};
+
+export default endPoint;
