@@ -15,6 +15,7 @@ import ToursManagerment from "@pages/quan-ly-he-thong/quan-ly-tour";
 import SchedulesManagement from "@pages/quan-ly-he-thong/quan-ly-lich-trinh";
 import BookingsManagement from "@pages/quan-ly-he-thong/quan-ly-don-dat-tour";
 import PaymentMethodManagement from "@pages/quan-ly-he-thong/quan-ly-phuong-thuc-thanh-toan";
+import Dashboard from "@pages/dashboard/dashboard-tv";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
             <Route path={endPoint.DASHBOARD}>
               <Route
                 path={endPoint.DASHBOARDTONG}
-                element={<DashboardTong />}
+                element={<Dashboard />}
               />
               <Route
                 path={endPoint.DASHBOARDCHUYEN}

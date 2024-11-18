@@ -11,7 +11,6 @@ namespace DA_K12_Tour.Models
         public Guid categoryId { get; set; }
         public virtual Category Category { get; set; }
         public string tourName { get; set; }
-        public int maxParticipant {  get; set; }
         public string AdultPrice { get; set; }
         public string ChildPrice { get; set; }
         public string Description { get; set; }

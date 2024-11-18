@@ -259,6 +259,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DA_K12_Tour.Controllers.StatisticsController",
+    "Method": "GetTourStatistics",
+    "RelativePath": "api/dashboard/tour-stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DA_K12_Tour.Controllers.PaymentController",
+    "Method": "CreatePaymentUrl",
+    "RelativePath": "api/payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DA_K12_Tour.Models.OrderInfoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DA_K12_Tour.Controllers.PaymentMethodController",
     "Method": "getAllPaymentMethod",
     "RelativePath": "api/paymentMethod",

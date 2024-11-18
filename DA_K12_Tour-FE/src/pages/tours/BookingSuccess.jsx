@@ -1,7 +1,7 @@
 import { Typography, Row, Col, Card, Divider, Button, Spin } from 'antd';
 
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { getBookingById } from '../../redux/features/system/bookingSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -9,6 +9,7 @@ const { Title, Text } = Typography;
 const BookingSuccess = () => {
 
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const [loading, setLoading] = useState(false)
 
@@ -38,7 +39,9 @@ const BookingSuccess = () => {
 
 
     const booking = selectedBooking && selectedBooking[0];
-
+    const formatCurrency = (amount) => {
+        return `${amount?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} đ`;
+    };
 
     return (
         <Spin spinning={loading}>
@@ -88,7 +91,7 @@ const BookingSuccess = () => {
                                         <Text strong>Trẻ em:</Text> <Text>{booking.numberOfChild}</Text>
                                     </Col>
                                     <Col span={12} style={{ padding: '0.5rem' }}>
-                                        <Text strong>Tổng số tiền:</Text> <Text style={{ fontSize: '18px', color: '#d4380d' }}>{booking.totalAmount}</Text>
+                                        <Text strong>Tổng số tiền:</Text> <Text style={{ fontSize: '18px', color: '#d4380d' }}>{formatCurrency(booking.totalAmount)}</Text>
                                     </Col>
                                 </Row>
 

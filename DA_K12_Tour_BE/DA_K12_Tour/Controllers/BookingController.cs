@@ -94,20 +94,72 @@ namespace DA_K12_Tour.Controllers
                     return NotFound("Không tìm thấy đơn đặt.");
                 }
 
-                // Update the status to "Đã hủy"
-                booking.Status = DA_K12_Tour.utils.BookingStatus.DaHuy; // Set the status to "Đã hủy"
+                // Compare dates, ignoring time
+                DateTime bookingDate = DateTime.Parse(booking.departureDate.ToString("yyyy-MM-dd"));
+                var daysLeft = (bookingDate - DateTime.Now.Date).Days;
 
-                // Save changes to the database
-                _context.Bookings.Update(booking);
-                _context.SaveChanges();
+                if (bookingDate < DateTime.Now.Date)
+                {
+                    return BadRequest("Không thể hủy tour vì tour đã bắt đầu hoặc đã qua ngày.");
+                }
 
-                return Ok("Đơn đặt đã được hủy.");
+                if (booking.Status == DA_K12_Tour.utils.BookingStatus.DaHuy)
+                {
+                    return BadRequest($"Đơn đặt đã được hủy trước đó. Status hiện tại: {booking.Status}");
+                }
+
+                // Determine the cancellation fee percentage
+                double cancellationFeePercentage = 0;
+
+                if (daysLeft >= 14 && daysLeft <= 19)
+                {
+                    cancellationFeePercentage = 0.50; // 50%
+                }
+                else if (daysLeft >= 10 && daysLeft <= 13)
+                {
+                    cancellationFeePercentage = 0.70; // 70%
+                }
+                else if (daysLeft >= 2 && daysLeft <= 9)
+                {
+                    cancellationFeePercentage = 0.90; // 90%
+                }
+                else if (daysLeft == 1)
+                {
+                    cancellationFeePercentage = 1.00; // 100%
+                }
+                else
+                {
+                    return BadRequest("Không thể hủy tour vì thời gian còn lại quá ngắn.");
+                }
+
+                var totalAmountWithoutCurrency = booking.totalAmount.Replace(" đ", "").Replace(".", "");
+
+                if (decimal.TryParse(totalAmountWithoutCurrency, out decimal totalAmount))
+                {
+                    // Calculate the cancellation fee
+                    var cancellationFee = totalAmount * (decimal)cancellationFeePercentage;
+
+                    booking.Status = DA_K12_Tour.utils.BookingStatus.DaHuy; // Mark booking as cancelled
+
+                    // Save changes to the database
+                    _context.Bookings.Update(booking);
+                    _context.SaveChanges();
+
+
+                    // Return success message with cancellation fee
+                    return Ok($"Đơn đặt đã được hủy. Phí hủy tour là {cancellationFee:N0} VND.");
+                }
+                else
+                {
+                    return BadRequest("Giá tour không hợp lệ.");
+                }
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest($"Đã xảy ra lỗi: {ex.Message}");
             }
         }
+
 
         [HttpPost]
         public IActionResult CreateBookings([FromBody] AddBookingRequest request)

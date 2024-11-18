@@ -7,6 +7,8 @@ import PriceTour from '../../components/tours/components/PriceTour';
 import { fetchPaymentMethods } from '../../redux/features/system/paymentMethodSlice';
 import { createBooking } from '../../redux/features/system/bookingSlice';
 import emailjs from 'emailjs-com'; // Import EmailJS
+import { createMomoPayment } from '../../redux/features/system/paymentSlice';
+import { v4 as uuidv4 } from 'uuid';
 
 const { Title, Text } = Typography;
 
@@ -51,6 +53,10 @@ const BookingTour = () => {
         getPaymentMethod();
     }, [id, dispatch]);
 
+    function formatAmount(amountString) {
+        return amountString.replace(/\./g, "").replace("đ", "").trim();
+    }
+
     const handleOk = async () => {
         try {
             const values = await form.validateFields();
@@ -58,13 +64,36 @@ const BookingTour = () => {
             if (values.departureDate) {
                 values.departureDate = values.departureDate.format("YYYY-MM-DD");
             }
+            if (values.totalAmount) {
+                values.totalAmount = formatAmount(values.totalAmount);
+            }
 
-            // Gửi email sau khi tạo booking thành công
-            const result = await dispatch(createBooking(values)).unwrap();
-            sendConfirmationEmail(values);  // Gửi email
 
-            message.success("Đặt tour thành công");
-            navigate(`/booking/booking-success/${result.id}`);
+
+            if (selectedPaymentMethod === BANK_TRANSFER_GUID) {
+                // Xử lý thanh toán qua MoMo
+                const momoResponse = await dispatch(createMomoPayment({
+                    orderId: `${Date.now()}-${uuidv4()}`,
+                    amount: values.totalAmount,
+                    orderInfo: `Đặt tour: ${selectedTour?.tourName}`,
+                    fullName: values.name,
+                    email: values.email,
+                    phoneNumber: values.phoneNumber
+                })).unwrap();
+
+                if (momoResponse && momoResponse.payUrl) {
+                    window.location.href = momoResponse.payUrl; // Điều hướng đến trang thanh toán MoMo
+                    return;
+                } else {
+                    message.error("Thanh toán MoMo không thành công.");
+                }
+            } else {
+                // Xử lý thanh toán thông thường
+                const result = await dispatch(createBooking(values)).unwrap();
+                sendConfirmationEmail(values)
+                message.success("Đặt tour thành công");
+                navigate(`/booking/booking-success/${result.id}`);
+            }
         } catch (errorInfo) {
             console.log("Failed:", errorInfo);
         }
@@ -124,21 +153,6 @@ const BookingTour = () => {
     const onPaymentMethodChange = (value) => {
         setSelectedPaymentMethod(value);
     };
-
-    const renderBankTransferInfo = () => (
-        <div style={{ border: '1px solid #e0e0e0', padding: 16, borderRadius: 8, marginTop: 20, textAlign: 'left' }}>
-            <Text strong>Chuyển khoản</Text>
-            <p>Quý khách sau khi thực hiện việc chuyển khoản vui lòng gửi email đến <strong>tructuyen@vietravel.com</strong> hoặc gọi tổng đài <strong>19001839</strong> để được xác nhận từ công ty chúng tôi.</p>
-            <p><strong>Tên Tài Khoản:</strong> Công ty CP Du lịch và Tiếp thị GTVT Việt Nam – Vietravel</p>
-            <Divider />
-            <p><strong>Số Tài khoản:</strong> 1022 185 650</p>
-            <p><strong>Ngân hàng:</strong> Vietcombank - Chi nhánh Tp.HCM</p>
-            <Divider />
-            <p><strong>Momo:</strong> 0389496543</p>
-            <p><strong>Chủ tài khoản:</strong> Võ Trường Long</p>
-        </div>
-    );
-
 
     return (
         <Row gutter={16} style={{ maxWidth: 1200, margin: '0 auto', textAlign: 'center' }}>
@@ -200,6 +214,7 @@ const BookingTour = () => {
                             placeholder="Chọn ngày đi"
                             showTime={false}
                             format="YYYY-MM-DD"
+                            disabledDate={(current) => current && current < new Date().setHours(0, 0, 0, 0)} // Không cho phép chọn ngày trước ngày hiện tại
                         />
                     </Form.Item>
 
@@ -220,7 +235,6 @@ const BookingTour = () => {
                             ))}
                         </Select>
                     </Form.Item>
-                    {selectedPaymentMethod === BANK_TRANSFER_GUID && renderBankTransferInfo()}
 
                     <Form.Item
                         name="totalAmount"

@@ -211,9 +211,6 @@ namespace DA_K12_Tour.Migrations
                     b.Property<bool>("isActive")
                         .HasColumnType("bit");
 
-                    b.Property<int>("maxParticipant")
-                        .HasColumnType("int");
-
                     b.Property<string>("tourId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

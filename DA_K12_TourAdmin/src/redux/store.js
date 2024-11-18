@@ -10,6 +10,7 @@ import toursReducer from "./features/system/tourSlice"
 import schedulesReducer from "./features/system/scheduleSlice"
 import bookingsReducer from "./features/system/bookingSlice"
 import paymentMethodsReducer from "./features/system/paymentMethodSlice"
+import dashBoardReducer from './features/dashboard/dashboardSlice'
 
 const persistConfig = {
   key: "root",
@@ -26,6 +27,7 @@ const rootReducer = combineReducers({
   schedules: schedulesReducer,
   bookings: bookingsReducer,
   paymentMethods: paymentMethodsReducer,
+  dashboards: dashBoardReducer,
 });
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

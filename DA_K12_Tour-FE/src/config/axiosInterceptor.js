@@ -50,22 +50,14 @@ axiosClientVer2.interceptors.response.use(
     async (error) => {
         console.log("🚀 ~ Response in Error (in axiosClientVer2):", error);
         if (error.response.status === 400) {
-            message.error(error.response.data.errorMessage);
         }
         if (error.response.status === 401) {
-            message.error(error.response.data.errorMessage);
         }
         if (error.response.status === 409) {
-            message.error(error.response.data.errorMessage);
         }
         if (error.response.status === 403) {
-            message.error(
-                error.response.data.errorMessage ||
-                "Tài khoản này không có quyền thực hiện hành động này!!"
-            );
         }
         if (error.response.status === 405) {
-            message.error(error.response.data.errorMessage || "Lỗi ");
         }
         const refreshToken_current = localStorage.getItem("refreshToken");
         const originalRequest = error.config;

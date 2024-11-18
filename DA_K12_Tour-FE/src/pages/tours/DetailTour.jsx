@@ -131,10 +131,6 @@ const TourDetail = () => {
                             <div style={{ display: 'flex', alignItems: 'center' }}>
                                 <div style={{ flex: 1 }}>
                                     <Text strong style={{ fontSize: '30px', color: '#c31432' }}>{selectedTour?.tourName}</Text>
-                                    <Descriptions bordered layout="vertical">
-                                        <Descriptions.Item labelStyle={{ fontWeight: 'bold' }} label="Mã tour">{selectedTour?.tourId}</Descriptions.Item>
-                                        <Descriptions.Item labelStyle={{ fontWeight: 'bold' }} label="Tham gia tối đa">{selectedTour?.maxParticipant}</Descriptions.Item>
-                                    </Descriptions>
                                     <PriceTour childPrice={selectedTour?.childPrice} adultPrice={selectedTour?.adultPrice} loading={loading} />
                                     <Button type="primary" size="large" style={{ marginTop: '20px', alignItems: "end" }}>
                                         <Link to={`/booking/${selectedTour?.id}`}>Đặt chỗ</Link>

@@ -292,3 +292,6 @@ D:\DA\DA_K12\DA_K12_Tour_BE\DA_K12_Tour\obj\Debug\net8.0\refint\DA_K12_Tour.dll
 D:\DA\DA_K12\DA_K12_Tour_BE\DA_K12_Tour\obj\Debug\net8.0\DA_K12_Tour.pdb
 D:\DA\DA_K12\DA_K12_Tour_BE\DA_K12_Tour\obj\Debug\net8.0\DA_K12_Tour.genruntimeconfig.cache
 D:\DA\DA_K12\DA_K12_Tour_BE\DA_K12_Tour\obj\Debug\net8.0\ref\DA_K12_Tour.dll
+D:\DA\DA_K12\DA_K12_Tour_BE\DA_K12_Tour\obj\Debug\net8.0\DA_K12_Tour.sourcelink.json
+D:\DA\DA_K12\DA_K12_Tour_BE\DA_K12_Tour\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\DA\DA_K12\DA_K12_Tour_BE\DA_K12_Tour\bin\Debug\net8.0\RestSharp.dll

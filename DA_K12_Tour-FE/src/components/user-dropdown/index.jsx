@@ -3,6 +3,7 @@ import { Dropdown, Space, Avatar, Tag, Button } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../../redux/features/auth/authSlice'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -10,11 +11,13 @@ import { logout } from '../../redux/features/auth/authSlice'
 const UserDropdown = ({ handleLogin }) => {
 
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const { user, role } = useSelector((state) => state.auth);
 
     const handleLogout = () => {
         dispatch(logout());
+        navigate('/')
     };
 
     const items = [

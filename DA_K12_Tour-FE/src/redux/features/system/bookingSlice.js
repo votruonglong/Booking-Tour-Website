@@ -55,6 +55,8 @@ export const cancelBooking = createAsyncThunk(
     async (id, { rejectWithValue }) => {
         try {
             const response = await putRequest(`/booking/CancelBooking/${id}`);
+            console.log(response);
+
             return response.data;
         } catch (error) {
             return rejectWithValue(error.response.data);
@@ -67,6 +69,7 @@ const bookingSlice = createSlice({
     initialState: {
         bookings: [],
         selectedBooking: null,
+        cancellationMessage: null,
         error: null,
         status: "idle",
         loading: null
@@ -128,6 +131,7 @@ const bookingSlice = createSlice({
                 state.bookings = state.bookings.map((booking) =>
                     booking.id === action.payload.id ? { ...booking, Status: "Đã hủy" } : booking
                 );
+                state.cancellationMessage = action.payload;
             })
             .addCase(cancelBooking.rejected, (state, action) => {
                 state.error = action.error.message;

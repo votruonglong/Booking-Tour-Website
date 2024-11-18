@@ -33,7 +33,6 @@ namespace DA_K12_Tour.Controllers
                 t.tourId,
                 t.categoryId,
                 t.tourName,
-                t.maxParticipant,
                 t.AdultPrice,
                 t.ChildPrice,
                 t.Description,
@@ -60,7 +59,6 @@ namespace DA_K12_Tour.Controllers
                     t.tourId,
                     t.categoryId,
                     t.tourName,
-                    t.maxParticipant,
                     t.AdultPrice,
                     t.ChildPrice,
                     t.Description,
@@ -99,7 +97,6 @@ namespace DA_K12_Tour.Controllers
                     tourName = request.tourName,
                     categoryId = request.categoryId,
                     Description = request.Description,
-                    maxParticipant = request.maxParticipant,
                     AdultPrice = request.AdultPrice,
                     ChildPrice = request.ChildPrice,
                     isActive = request.isActive,
@@ -146,7 +143,6 @@ namespace DA_K12_Tour.Controllers
                 tour.tourName = request.tourName;
                 tour.categoryId = request.categoryId;
                 tour.Description = request.Description;
-                tour.maxParticipant = request.maxParticipant;
                 tour.AdultPrice = request.AdultPrice;
                 tour.ChildPrice = request.ChildPrice;
                 tour.isActive = request.isActive;

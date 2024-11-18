@@ -99,7 +99,7 @@ const PriceTour = ({ childPrice, adultPrice, loading }) => {
 
     return (
         <div style={{ marginTop: '20px', width: "600px" }}>
-            <Title level={3}>Thông tin giá tour</Title>
+            <Title level={4}>Thông tin giá tour</Title>
             <Spin spinning={loading}>
                 <Table
                     dataSource={dataSource}

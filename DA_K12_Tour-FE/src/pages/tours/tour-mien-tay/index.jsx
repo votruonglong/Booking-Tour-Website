@@ -46,7 +46,6 @@ const TourMienTay = () => {
                 title="Tour ở miền Tây"
                 tours={toursInMienTay}
                 pagination={true}
-                search={true}
                 loading={isLoading}
                 viewAll={false}
             />

@@ -9,6 +9,7 @@ import schedulesReducer from "./features/system/scheduleSlice"
 import bookingsReducer from "./features/system/bookingSlice"
 import paymentMethodsReducer from "./features/system/paymentMethodSlice"
 import commentReducer from './features/system/commentSlice'
+import paymentReducer from './features/system/paymentSlice'
 
 const persistConfig = {
     key: "root",
@@ -24,7 +25,8 @@ const rootReducer = combineReducers({
     schedules: schedulesReducer,
     bookings: bookingsReducer,
     paymentMethods: paymentMethodsReducer,
-    comments: commentReducer
+    comments: commentReducer,
+    payments: paymentReducer
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
