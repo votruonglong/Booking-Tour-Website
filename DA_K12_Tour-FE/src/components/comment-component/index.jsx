@@ -48,7 +48,7 @@ const CommentComponent = ({ comments, userId, tourId, fetchCommentByTourId }) =>
                     </Form.Item>
                 </Form> : <Title level={5} style={{ textAlign: 'center' }}>Đăng nhập để bình luận</Title>}
 
-                <List
+                {comments && <List
                     bordered
                     dataSource={comments}
                     renderItem={item => (
@@ -68,7 +68,8 @@ const CommentComponent = ({ comments, userId, tourId, fetchCommentByTourId }) =>
                             </Button>
                         </List.Item>
                     )}
-                />
+                />}
+
             </Card >
         </div>
     );

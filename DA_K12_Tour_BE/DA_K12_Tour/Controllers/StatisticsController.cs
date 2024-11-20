@@ -1,5 +1,6 @@
 ﻿using DA_K12_Tour.Data;
 using DA_K12_Tour.Models.DTO;
+using DA_K12_Tour.Services.Statistics;
 using DA_K12_Tour.utils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,10 +16,12 @@ namespace DA_K12_Tour.Controllers
     public class StatisticsController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly RevenueStatisticsService _revenueService;
 
-        public StatisticsController(AppDbContext context)
+        public StatisticsController(AppDbContext context, RevenueStatisticsService revenueService)
         {
             _context = context;
+            _revenueService = revenueService;
         }
 
         // API for getting tour statistics
@@ -83,6 +86,58 @@ namespace DA_K12_Tour.Controllers
 
             // Trả về kết quả thống kê
             return Ok(stats);
+        }
+
+        [HttpGet("RevenueByCategory")]
+        public IActionResult GetRevenueByCategory()
+        {
+            var bookings = _context.Bookings
+                .Include(b => b.Tour)
+                .ThenInclude(t => t.Category)
+                .Where(b => b.Status == BookingStatus.DaNhan) // Lọc theo Status "Đã nhận"
+                .ToList();
+
+            var revenueByCategory = bookings
+                .Where(b => b.Tour?.Category != null) // Đảm bảo có Category
+                .GroupBy(b => b.Tour.Category.Name)
+                .Select(group => new
+                {
+                    CategoryName = group.Key,
+                    TotalRevenue = group.Sum(b =>
+                    {
+                        // Chuẩn hóa totalAmount: loại bỏ ký tự '.' và ' đ'
+                        var normalizedAmount = b.totalAmount
+                            .Replace(".", "") // Loại bỏ dấu chấm
+                            .Replace(" đ", ""); // Loại bỏ đơn vị tiền tệ
+
+                        // Chuyển đổi sang decimal
+                        return decimal.TryParse(normalizedAmount, out var amount) ? amount : 0;
+                    })
+                })
+                .ToList();
+
+            return Ok(revenueByCategory);
+        }
+
+        [HttpGet("BookingsByTour")]
+        public IActionResult GetBookingsByTour()
+        {
+            var bookings = _context.Bookings
+                .Include(b => b.Tour)
+                .Where(b => b.Status == BookingStatus.DaNhan) // Lọc theo Status "Đã nhận"
+                .ToList();
+
+            var bookingsByTour = bookings
+                .Where(b => b.Tour != null) // Đảm bảo có Tour
+                .GroupBy(b => b.Tour.tourName) // Nhóm theo tên tour
+                .Select(group => new
+                {
+                    TourName = group.Key,
+                    TotalBookings = group.Count() // Đếm số lượng booking cho từng tour
+                })
+                .ToList();
+
+            return Ok(bookingsByTour);
         }
     }
 }

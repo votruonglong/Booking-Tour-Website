@@ -59,15 +59,16 @@ const TourDetail = () => {
         }
     };
 
-
     useEffect(() => {
+        dispatch({ type: 'comments/resetComments' });  // Ensure to reset the comments in redux before fetching
+
+        // Fetch tour details and schedule
         getTourDetail();
         getSchedule();
-    }, [id, dispatch]);
 
-    useEffect(() => {
+        // Fetch comments for the selected tour
         fetchCommentByTourId();
-    }, [dispatch]);
+    }, [dispatch, id]);
 
 
 
@@ -131,7 +132,39 @@ const TourDetail = () => {
                             <div style={{ display: 'flex', alignItems: 'center' }}>
                                 <div style={{ flex: 1 }}>
                                     <Text strong style={{ fontSize: '30px', color: '#c31432' }}>{selectedTour?.tourName}</Text>
-                                    <PriceTour childPrice={selectedTour?.childPrice} adultPrice={selectedTour?.adultPrice} loading={loading} />
+                                    <Descriptions
+                                        bordered
+                                        column={1}
+                                        style={{ marginBottom: '20px' }}
+                                        labelStyle={{
+                                            fontWeight: 'bold',
+                                            fontSize: '16px',
+                                            color: '#333',
+                                            display: 'flex',
+                                            justifyContent: 'space-between', // Căn đều label
+                                        }}
+                                        contentStyle={{
+                                            fontSize: '16px',
+                                            color: '#555',
+                                            display: 'flex',
+                                            justifyContent: 'space-between', // Căn đều content
+                                        }}
+                                    >
+                                        <Descriptions.Item label="Mô tả" span={3}>
+                                            <Text style={{ fontSize: '16px', color: '#555', lineHeight: '1.5' }}>
+                                                {selectedTour?.description}
+                                            </Text>
+                                        </Descriptions.Item>
+                                        <Descriptions.Item label="Địa điểm" span={3}>
+                                            <Text style={{ fontSize: '16px', color: '#555' }}>
+                                                {selectedTour?.categoryName}
+                                            </Text>
+                                        </Descriptions.Item>
+                                    </Descriptions>
+                                    <PriceTour
+                                        childPrice={selectedTour?.childPrice}
+                                        adultPrice={selectedTour?.adultPrice}
+                                        loading={loading} />
                                     <Button type="primary" size="large" style={{ marginTop: '20px', alignItems: "end" }}>
                                         <Link to={`/booking/${selectedTour?.id}`}>Đặt chỗ</Link>
                                     </Button>

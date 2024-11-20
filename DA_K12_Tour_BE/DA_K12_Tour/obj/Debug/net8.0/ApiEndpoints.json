@@ -260,6 +260,26 @@
   },
   {
     "ContainingType": "DA_K12_Tour.Controllers.StatisticsController",
+    "Method": "GetBookingsByTour",
+    "RelativePath": "api/dashboard/BookingsByTour",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DA_K12_Tour.Controllers.StatisticsController",
+    "Method": "GetRevenueByCategory",
+    "RelativePath": "api/dashboard/RevenueByCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DA_K12_Tour.Controllers.StatisticsController",
     "Method": "GetTourStatistics",
     "RelativePath": "api/dashboard/tour-stats",
     "HttpMethod": "GET",

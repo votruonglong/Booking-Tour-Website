@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card, Statistic, Spin, Divider } from "antd";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Bar, BarChart } from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Bar, BarChart, PieChart, Pie, Cell } from "recharts";
 import { UserOutlined, BookOutlined, DollarCircleOutlined } from '@ant-design/icons'; // Thêm icon
 import { useDispatch, useSelector } from "react-redux";
-import { fetchDashboard } from "@redux/features/dashboard/dashboardSlice";
+import { fetchCategoryRevenue, fetchDashboard, fetchTotalTour } from "@redux/features/dashboard/dashboardSlice";
 
 const { Meta } = Card;
 
 const Dashboard = () => {
   const dispatch = useDispatch();
 
-  const { dashboards } = useSelector((state) => state.dashboards);
+  const { dashboards, categoryRevenue, bookingsTour } = useSelector((state) => state.dashboards);
 
   const [loading, setLoading] = useState(false);
 
@@ -25,21 +25,39 @@ const Dashboard = () => {
     }
   };
 
+  const getcategoryRevenue = async () => {
+    setLoading(true);
+    try {
+      await dispatch(fetchCategoryRevenue()).unwrap();
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getBookingTour = async () => {
+    setLoading(true);
+    try {
+      await dispatch(fetchTotalTour()).unwrap();
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     getDashBoardData();
+    getcategoryRevenue()
+    getBookingTour()
   }, [dispatch]);
 
   if (loading) {
     return <Spin size="large" />;
   }
 
-  const data = [
-    { name: "Jan", TotalTours: 30, TotalBookings: 20 },
-    { name: "Feb", TotalTours: 40, TotalBookings: 25 },
-    { name: "Mar", TotalTours: 50, TotalBookings: 30 },
-    { name: "Apr", TotalTours: 60, TotalBookings: 40 },
-    { name: "May", TotalTours: 70, TotalBookings: 50 },
-  ];
+  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
   return (
     <div style={{ padding: "20px" }}>
@@ -139,7 +157,7 @@ const Dashboard = () => {
               boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
             }}
           >
-            <ResponsiveContainer width="100%" height={300}>
+            <ResponsiveContainer width="100%" height={250}>
               <BarChart width={730} height={250} data={dashboards?.monthlyBookingStats}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
@@ -155,23 +173,55 @@ const Dashboard = () => {
         <Col span={12}>
           <Card
             hoverable
-            title="Booking & Tour Trends"
+            title="Doanh thu theo Miền"
             style={{
               borderRadius: "10px",
               backgroundColor: "#e6f7ff",
               boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
             }}
           >
-            <ResponsiveContainer width="100%" height={300}>
-              <LineChart data={data}>
+            <ResponsiveContainer width="100%" height={250}>
+              <BarChart width={730} height={250} data={categoryRevenue}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
+                <XAxis dataKey="categoryName" />
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="TotalTours" stroke="#3f8600" />
-                <Line type="monotone" dataKey="TotalBookings" stroke="#1d39c4" />
-              </LineChart>
+                <Bar dataKey="totalRevenue" fill="#8884d8" name="Doanh thu" />
+              </BarChart>
+            </ResponsiveContainer>
+          </Card>
+        </Col>
+        <Col span={12}>
+          <Card
+            hoverable
+            title="Thống kê số lượng đặt từng tour"
+            style={{
+              borderRadius: "10px",
+              backgroundColor: "#e6f7ff",
+              boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <ResponsiveContainer width="100%" height={250}>
+              <PieChart width={730} height={250}>
+                <Pie
+                  data={bookingsTour}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  outerRadius={120}
+                  innerRadius={90}
+                  fill="#8884d8"
+                  dataKey="totalBookings"
+                  nameKey="tourName"
+                >
+                  {bookingsTour.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip />
+
+              </PieChart>
             </ResponsiveContainer>
           </Card>
         </Col>

@@ -35,7 +35,11 @@ const commentSlice = createSlice({
         status: "idle",
         loading: null
     },
-    reducers: {},
+    reducers: {
+        resetComments: (state) => {
+            state.comments = [];  // Xóa tất cả các comment
+        },
+    },
 
     extraReducers: (builder) => {
         builder
@@ -68,6 +72,6 @@ const commentSlice = createSlice({
     },
 });
 
-export const { } = commentSlice.actions;
+export const { resetComments } = commentSlice.actions;
 
 export default commentSlice.reducer;

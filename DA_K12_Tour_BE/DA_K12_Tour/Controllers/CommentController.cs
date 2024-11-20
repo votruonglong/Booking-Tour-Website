@@ -52,11 +52,6 @@ namespace DA_K12_Tour.Controllers
                 })
                 .ToListAsync();
 
-            if (comment == null || comment.Count == 0)
-            {
-                return NotFound(new { message = "Không tìm thấy comment cho tour này." });
-            }
-
             return Ok(comment);
         }
 

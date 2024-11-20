@@ -1,6 +1,7 @@
 ﻿using DA_K12_Tour.Data;
 using DA_K12_Tour.Models.Momo;
 using DA_K12_Tour.Services.Momo;
+using DA_K12_Tour.Services.Statistics;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
 builder.Services.AddScoped<IMomoService, MomoService>();
+builder.Services.AddScoped<RevenueStatisticsService>();
 
 builder.Services.AddDbContext<AppDbContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("MyCnn")));

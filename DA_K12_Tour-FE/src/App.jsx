@@ -11,6 +11,7 @@ import TourDetail from './pages/tours/DetailTour'
 import BookingTour from './pages/tours/BookingTour'
 import BookingSuccess from './pages/tours/BookingSuccess'
 import CancelBooking from './pages/tours/CancelBooking'
+import BookingSuccessMomo from './pages/tours/BookingSuccessMomo'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/tours/:id" element={<TourDetail />} />
           <Route path="/booking/:id" element={<BookingTour />} />
           <Route path="/booking/booking-success/:id" element={<BookingSuccess />} />
+          <Route path="/booking/booking-info-momo" element={<BookingSuccessMomo />} />
           <Route path="/cancel-booking" element={<CancelBooking />} />
         </Route>
 
