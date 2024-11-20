@@ -55,8 +55,6 @@ export const cancelBooking = createAsyncThunk(
     async (id, { rejectWithValue }) => {
         try {
             const response = await putRequest(`/booking/CancelBooking/${id}`);
-            console.log(response);
-
             return response.data;
         } catch (error) {
             return rejectWithValue(error.response.data);
