@@ -3,6 +3,7 @@
     public enum BookingStatus
     {
         DaNhan = 1, // "Đã nhận"
-        DaHuy = 2   // "Đã hủy"
+        DaHuy = -1,
+        DaThanhToan = 2,// "Đã hủy"
     }
 }

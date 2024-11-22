@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card, Statistic, Spin, Divider } from "antd";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Bar, BarChart, PieChart, Pie, Cell } from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Bar, BarChart, PieChart, Pie, Cell, RadialBarChart, RadialBar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from "recharts";
 import { UserOutlined, BookOutlined, DollarCircleOutlined } from '@ant-design/icons'; // Thêm icon
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCategoryRevenue, fetchDashboard, fetchTotalTour } from "@redux/features/dashboard/dashboardSlice";
+import { fetchCategoryRevenue, fetchDashboard, fetchTotalTour, fetchTourComment } from "@redux/features/dashboard/dashboardSlice";
 
 const { Meta } = Card;
 
 const Dashboard = () => {
   const dispatch = useDispatch();
 
-  const { dashboards, categoryRevenue, bookingsTour } = useSelector((state) => state.dashboards);
+  const { dashboards, categoryRevenue, bookingsTour, tourComment } = useSelector((state) => state.dashboards);
 
   const [loading, setLoading] = useState(false);
 
@@ -47,10 +47,22 @@ const Dashboard = () => {
     }
   };
 
+  const getTourCommentDashBoard = async () => {
+    setLoading(true);
+    try {
+      await dispatch(fetchTourComment()).unwrap();
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  }
+
   useEffect(() => {
     getDashBoardData();
     getcategoryRevenue()
     getBookingTour()
+    getTourCommentDashBoard()
   }, [dispatch]);
 
   if (loading) {
@@ -58,6 +70,12 @@ const Dashboard = () => {
   }
 
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+  const truncateText = (text, maxLength = 10) => {
+    if (text.length > maxLength) {
+      return text.slice(0, maxLength) + '...';
+    }
+    return text;
+  };
 
   return (
     <div style={{ padding: "20px" }}>
@@ -222,6 +240,28 @@ const Dashboard = () => {
                 <Tooltip />
 
               </PieChart>
+            </ResponsiveContainer>
+          </Card>
+        </Col>
+        <Col span={12}>
+          <Card
+            hoverable
+            title="Tour được yêu thích nhất"
+            style={{
+              borderRadius: "10px",
+              backgroundColor: "#e6f7ff",
+              boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <ResponsiveContainer width="100%" height={250}>
+              <BarChart width={730} height={250} data={tourComment}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="tourName" tickFormatter={(tick) => truncateText(tick, 10)} />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="commentCount" fill="#8884d8" name="Doanh thu" />
+              </BarChart>
             </ResponsiveContainer>
           </Card>
         </Col>

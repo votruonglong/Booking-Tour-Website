@@ -36,7 +36,7 @@ namespace DA_K12_Tour.Controllers
 
             // Lấy danh sách bookings có trạng thái đã nhận
             var bookings = await _context.Bookings
-                .Where(b => b.Status == BookingStatus.DaNhan) // Chỉ lấy các booking đã xác nhận
+                .Where(b => b.Status == BookingStatus.DaThanhToan) // Chỉ lấy các booking đã xác nhận
                 .ToListAsync();
 
             // Lấy danh sách bookings có trạng thái đã hủy
@@ -94,7 +94,7 @@ namespace DA_K12_Tour.Controllers
             var bookings = _context.Bookings
                 .Include(b => b.Tour)
                 .ThenInclude(t => t.Category)
-                .Where(b => b.Status == BookingStatus.DaNhan) // Lọc theo Status "Đã nhận"
+                .Where(b => b.Status == BookingStatus.DaThanhToan) // Lọc theo Status "Đã nhận"
                 .ToList();
 
             var revenueByCategory = bookings
@@ -124,7 +124,7 @@ namespace DA_K12_Tour.Controllers
         {
             var bookings = _context.Bookings
                 .Include(b => b.Tour)
-                .Where(b => b.Status == BookingStatus.DaNhan) // Lọc theo Status "Đã nhận"
+                .Where(b => b.Status == BookingStatus.DaThanhToan) // Lọc theo Status "Đã nhận"
                 .ToList();
 
             var bookingsByTour = bookings
@@ -138,6 +138,22 @@ namespace DA_K12_Tour.Controllers
                 .ToList();
 
             return Ok(bookingsByTour);
+        }
+
+        [HttpGet("tour-comments")]
+        public async Task<IActionResult> GetCommentStatisticsByTour()
+        {
+            var statistics = await _context.Comments
+                .GroupBy(c => c.TourId)
+                .Select(group => new
+                {
+                    TourId = group.Key,
+                    TourName = group.FirstOrDefault().Tour.tourName,
+                    CommentCount = group.Count()
+                })
+                .ToListAsync();
+
+            return Ok(statistics);
         }
     }
 }

@@ -209,12 +209,16 @@ const BookingsManagement = () => {
             render: (text, record) => (
                 <Button
                     style={{
-                        backgroundColor: record.status == 1 ? 'green' : 'gray',
-                        color: 'white'
+                        backgroundColor: record.status === 1 ? 'green' :
+                            record.status === -1 ? 'gray' :
+                                record.status === 2 ? 'blue' : 'gray',
+                        color: 'white',
                     }}
                     disabled
                 >
-                    {record.status == 1 ? 'Đã nhận' : 'Đã hủy'}
+                    {record.status === 1 ? 'Đã nhận' :
+                        record.status === -1 ? 'Đã hủy' :
+                            record.status === 2 ? 'Đã thanh toán' : 'Không xác định'}
                 </Button>
             ),
         },

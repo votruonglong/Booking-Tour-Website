@@ -30,12 +30,22 @@ export const fetchTotalTour = createAsyncThunk(
     }
 );
 
+export const fetchTourComment = createAsyncThunk(
+    "dashboard/fetchTourComment",
+    async () => {
+        const response = await getRequest("/dashboard/tour-comments");
+
+        return response.data;
+    }
+);
+
 const dashBoardSlice = createSlice({
     name: "dashboard",
     initialState: {
         dashboards: [],
         categoryRevenue: [],
         bookingsTour: [],
+        tourComment: [],
         error: null,
         status: "idle",
         loading: null
@@ -74,6 +84,17 @@ const dashBoardSlice = createSlice({
                 state.status = "succeeded";
             })
             .addCase(fetchTotalTour.rejected, (state, action) => {
+                state.error = action.error.message;
+                state.status = "failed";
+            })
+            .addCase(fetchTourComment.pending, (state) => {
+                state.status = "loading";
+            })
+            .addCase(fetchTourComment.fulfilled, (state, action) => {
+                state.tourComment = action.payload;
+                state.status = "succeeded";
+            })
+            .addCase(fetchTourComment.rejected, (state, action) => {
                 state.error = action.error.message;
                 state.status = "failed";
             })

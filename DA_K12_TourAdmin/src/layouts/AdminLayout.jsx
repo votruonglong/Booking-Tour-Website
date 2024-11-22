@@ -259,6 +259,7 @@ const AdminLayout = () => {
             minHeight: 280,
             background: colorBgContainer,
             borderRadius: borderRadiusLG,
+            overflow: 'scroll'
           }}
         >
           {/* <Outlet />

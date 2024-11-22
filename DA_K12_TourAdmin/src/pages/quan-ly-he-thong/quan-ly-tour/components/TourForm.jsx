@@ -138,13 +138,6 @@ const TourForm = ({
                     <Input />
                 </Form.Item>
                 <Form.Item
-                    name="maxParticipant"
-                    label="Số lượng tối đa"
-                    rules={[{ required: true, message: "Vui lòng nhập số lượng tối đa" }]}
-                >
-                    <InputNumber />
-                </Form.Item>
-                <Form.Item
                     name="adultPrice"
                     label="Giá người lớn"
                     rules={[{ required: true, message: "Vui lòng nhập giá" }]}

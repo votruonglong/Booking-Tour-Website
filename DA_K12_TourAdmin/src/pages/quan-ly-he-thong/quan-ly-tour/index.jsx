@@ -156,7 +156,6 @@ const ToursManagerment = () => {
         categoryId: item.categoryId,
         name: item.tourName,
         description: item.description,
-        maxParticipant: item.maxParticipant,
         childPrice: item.childPrice,
         adultPrice: item.adultPrice,
         isActive: item.isActive,
@@ -217,11 +216,6 @@ const ToursManagerment = () => {
             dataIndex: "name",
             width: 200,
             sorter: (a, b) => (a.name || "").localeCompare(b.name || ""),
-        },
-        {
-            title: "Số lượng tối đa",
-            dataIndex: "maxParticipant",
-            width: 200,
         },
         {
             title: "Giá trẻ em",

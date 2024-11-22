@@ -280,6 +280,16 @@
   },
   {
     "ContainingType": "DA_K12_Tour.Controllers.StatisticsController",
+    "Method": "GetCommentStatisticsByTour",
+    "RelativePath": "api/dashboard/tour-comments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DA_K12_Tour.Controllers.StatisticsController",
     "Method": "GetTourStatistics",
     "RelativePath": "api/dashboard/tour-stats",
     "HttpMethod": "GET",
