@@ -13,6 +13,19 @@ export const fetchBooking = createAsyncThunk(
     }
 );
 
+export const updateBooking = createAsyncThunk(
+    "booking/updateBooking",
+    async ({ id, ...data }, { rejectWithValue }) => {
+        try {
+            const response = await putRequest(`/booking/${id}`, data);
+            return response.data;
+        } catch (error) {
+            return rejectWithValue(error.response.data);
+        }
+    }
+);
+
+
 const bookingSlice = createSlice({
     name: "booking",
     initialState: {

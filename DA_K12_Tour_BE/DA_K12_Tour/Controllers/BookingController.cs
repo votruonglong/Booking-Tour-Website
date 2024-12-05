@@ -178,7 +178,7 @@ namespace DA_K12_Tour.Controllers
                     departureDate = request.departureDate,
                     numberOfAdult = request.numberOfAdult,
                     numberOfChild = request.numberOfChild,
-                    tourName=request.tourName,
+                    tourName = request.tourName,
                     totalAmount = request.totalAmount,
                     paymentMethodId = request.paymentMethodId,
                     bookingDate = DateOnly.FromDateTime(DateTime.Now),
@@ -196,7 +196,7 @@ namespace DA_K12_Tour.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateBooking(Guid id, [FromBody] AddBookingRequest request)
+        public IActionResult UpdateBooking(Guid id, [FromBody] UpdateBookingRequest request)
         {
             try
             {
@@ -208,16 +208,7 @@ namespace DA_K12_Tour.Controllers
                 }
 
 
-                booking.bookingId = $"Booking-{Guid.NewGuid()}";
-                booking.tourId = request.tourId;
-                booking.description = request.description;
-                booking.name = request.name;
-                booking.email = request.email;
-                booking.numberOfChild = request.numberOfChild;
-                booking.numberOfAdult = request.numberOfAdult;
-                booking.totalAmount = request.totalAmount;
-                booking.paymentMethodId = request.paymentMethodId;
-                booking.bookingDate = DateOnly.FromDateTime(DateTime.Now);
+                booking.Status = request.Status;
 
 
                 _context.Bookings.Update(booking);

@@ -72,7 +72,7 @@
       },
       {
         "Name": "request",
-        "Type": "DA_K12_Tour.Models.DTO.AddBookingRequest",
+        "Type": "DA_K12_Tour.Models.DTO.UpdateBookingRequest",
         "IsRequired": true
       }
     ],

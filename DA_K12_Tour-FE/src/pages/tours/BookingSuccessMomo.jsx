@@ -47,9 +47,6 @@ const BookingSuccessMomo = () => {
                                     <Button type="primary" key="dashboard">
                                         <Link to="/dashboard">Về trang chủ</Link>
                                     </Button>,
-                                    <Button key="viewTour">
-                                        <Link to="/tour-details">Xem chi tiết tour</Link>
-                                    </Button>,
                                 ]}
                             />
                         ) : (
@@ -75,7 +72,7 @@ const BookingSuccessMomo = () => {
                             <Descriptions.Item label="Mã giao dịch MoMo">{transId}</Descriptions.Item>
                             <Descriptions.Item label="Số tiền">{amount ? `${formatCurrency(amount)}` : 'Không có dữ liệu'}</Descriptions.Item>
                             <Descriptions.Item label="Thông tin đơn hàng">{orderInfo}</Descriptions.Item>
-                            <Descriptions.Item label="Thời gian phản hồi">{responseTime}</Descriptions.Item>
+                            <Descriptions.Item label="Ngày đặt">{responseTime}</Descriptions.Item>
                         </Descriptions>
                     </Card>
                 </Col>

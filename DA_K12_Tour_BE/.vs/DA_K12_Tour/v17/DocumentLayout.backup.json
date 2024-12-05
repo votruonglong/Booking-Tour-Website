@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\utils\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\utils\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\dto\\updatebookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\dto\\updatebookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\dto\\addbookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\dto\\addbookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\dto\\addcategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\dto\\addcategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\momo\\momooptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\momo\\momooptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\controllers\\tourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\controllers\\tourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\utils\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\utils\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\momo\\momocreatepaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\momo\\momocreatepaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\momo\\momooptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\momo\\momooptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\momo\\momoexecuteresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\migrations\\20241118100118_edittabletour222.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\controllers\\tourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\controllers\\tourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -97,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\controllers\\danhmuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\controllers\\danhmuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\dto\\monthlybookingstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\dto\\monthlybookingstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\dto\\addbookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\dto\\addbookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\da_k12_tour.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -161,10 +169,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\da_k12_tour.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\da_k12_tour.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\dto\\addcategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|solutionrelative:da_k12_tour\\models\\dto\\addcategoryrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0649A179-B72A-43AC-8F38-1C2955210865}|DA_K12_Tour\\DA_K12_Tour.csproj|d:\\da\\da_k12\\da_k12_tour_be\\da_k12_tour\\models\\dto\\tourdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -285,11 +289,154 @@
       "DocumentGroups": [
         {
           "DockedWidth": 691,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateBookingRequest.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\UpdateBookingRequest.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\UpdateBookingRequest.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\UpdateBookingRequest.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\DTO\\UpdateBookingRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T08:05:39.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Tour.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Tour.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Tour.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Tour.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\Tour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T06:10:42.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Comment.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Comment.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:07:33.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\StatisticsController.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T07:03:54.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Booking.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Booking.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\Booking.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T07:37:52.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingStatus.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\utils\\BookingStatus.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\utils\\BookingStatus.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\utils\\BookingStatus.cs",
+              "RelativeToolTip": "DA_K12_Tour\\utils\\BookingStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T14:06:53.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterRequestDTO.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\RegisterRequestDTO.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\RegisterRequestDTO.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\RegisterRequestDTO.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\DTO\\RegisterRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:28:49.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\BookingController.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAmwNIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T07:45:51.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TourController.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\TourController.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\TourController.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\TourController.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Controllers\\TourController.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAIwJAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T07:29:31.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddBookingRequest.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddBookingRequest.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddBookingRequest.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddBookingRequest.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\DTO\\AddBookingRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T08:07:21.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddCategoryRequestDTO.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddCategoryRequestDTO.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddCategoryRequestDTO.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddCategoryRequestDTO.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\DTO\\AddCategoryRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T05:22:49.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MomoOptionModel.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Momo\\MomoOptionModel.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Momo\\MomoOptionModel.cs",
@@ -297,23 +444,24 @@
               "RelativeToolTip": "DA_K12_Tour\\Models\\Momo\\MomoOptionModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:09:30.414Z"
+              "WhenOpened": "2024-11-18T06:09:30.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderInfoModel.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\OrderInfoModel.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\OrderInfoModel.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\OrderInfoModel.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Models\\OrderInfoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Schedule.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Schedule.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Schedule.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\Schedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:22:03.097Z"
+              "WhenOpened": "2024-11-05T03:24:03.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "CommentController.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\CommentController.cs",
@@ -325,98 +473,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Schedule.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Schedule.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Schedule.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Schedule.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Models\\Schedule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "OrderInfoModel.cs",
+              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\OrderInfoModel.cs",
+              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\OrderInfoModel.cs",
+              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\OrderInfoModel.cs",
+              "RelativeToolTip": "DA_K12_Tour\\Models\\OrderInfoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T03:24:03.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T06:22:03.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Tour.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Tour.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Tour.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Tour.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Models\\Tour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T06:10:42.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Comment.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Comment.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Comment.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Models\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T06:07:33.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StatisticsController.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\StatisticsController.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\StatisticsController.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\StatisticsController.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Controllers\\StatisticsController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCkAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T07:03:54.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Booking.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Booking.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Booking.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Models\\Booking.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBsAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T07:37:52.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookingStatus.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\utils\\BookingStatus.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\utils\\BookingStatus.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\utils\\BookingStatus.cs",
-              "RelativeToolTip": "DA_K12_Tour\\utils\\BookingStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:06:53.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterRequestDTO.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\RegisterRequestDTO.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\RegisterRequestDTO.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\RegisterRequestDTO.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Models\\DTO\\RegisterRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:28:49.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "MomoExecuteResponseModel.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Momo\\MomoExecuteResponseModel.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Momo\\MomoExecuteResponseModel.cs",
@@ -428,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "MomoCreatePaymentResponseModel.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Momo\\MomoCreatePaymentResponseModel.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Momo\\MomoCreatePaymentResponseModel.cs",
@@ -440,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\appsettings.json",
               "RelativeDocumentMoniker": "DA_K12_Tour\\appsettings.json",
@@ -452,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\Category.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\Category.cs",
@@ -464,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Program.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Program.cs",
@@ -476,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "ScheduleController.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\ScheduleController.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\ScheduleController.cs",
@@ -488,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\PaymentController.cs",
@@ -500,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "DanhMucController.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\DanhMucController.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\DanhMucController.cs",
@@ -512,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "RevenueStatisticsService.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Services\\Statistics\\RevenueStatisticsService.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Services\\Statistics\\RevenueStatisticsService.cs",
@@ -524,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "20241118100118_EditTableTour222.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241118100118_EditTableTour222.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241118100118_EditTableTour222.cs",
@@ -536,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "RevenueStatisticsDto.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\RevenueStatisticsDto.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\RevenueStatisticsDto.cs",
@@ -548,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\AuthController.cs",
@@ -560,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\UsersController.cs",
@@ -572,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Data\\AppDbContext.cs",
@@ -584,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "MomoService.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Services\\Momo\\MomoService.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Services\\Momo\\MomoService.cs",
@@ -596,31 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\BookingController.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAowGEAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T07:45:51.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TourController.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\TourController.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\TourController.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\TourController.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Controllers\\TourController.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAA4wJAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T07:29:31.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "TourImage.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\TourImage.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\TourImage.cs",
@@ -632,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "MonthlyBookingStatsDTO.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\MonthlyBookingStatsDTO.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\MonthlyBookingStatsDTO.cs",
@@ -644,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "IMomoService.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Services\\Momo\\IMomoService.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Services\\Momo\\IMomoService.cs",
@@ -656,19 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "AddBookingRequest.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddBookingRequest.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddBookingRequest.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddBookingRequest.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Models\\DTO\\AddBookingRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T08:07:21.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "TourStatisticsDTO.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\TourStatisticsDTO.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\TourStatisticsDTO.cs",
@@ -680,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "20241114061033_createTableComment.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241114061033_createTableComment.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241114061033_createTableComment.cs",
@@ -692,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "DA_K12_Tour.csproj",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\DA_K12_Tour.csproj",
               "RelativeDocumentMoniker": "DA_K12_Tour\\DA_K12_Tour.csproj",
@@ -704,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "AddCommentRequest.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddCommentRequest.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddCommentRequest.cs",
@@ -716,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "20241114062052_editTableComment.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241114062052_editTableComment.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241114062052_editTableComment.cs",
@@ -728,7 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "PaymentMethod.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\PaymentMethod.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\PaymentMethod.cs",
@@ -740,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "PaymentMethodController.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Controllers\\PaymentMethodController.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Controllers\\PaymentMethodController.cs",
@@ -752,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "20241113133541_editTableTour835.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241113133541_editTableTour835.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241113133541_editTableTour835.cs",
@@ -764,7 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "20241113140907_editTableBooking908.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241113140907_editTableBooking908.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241113140907_editTableBooking908.cs",
@@ -776,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "AddTourRequest.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddTourRequest.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddTourRequest.cs",
@@ -788,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "20241113121715_editTableTour.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241113121715_editTableTour.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241113121715_editTableTour.cs",
@@ -800,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "AddPaymentMethodRequest.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddPaymentMethodRequest.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddPaymentMethodRequest.cs",
@@ -812,7 +845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "20241106084828_createTablePaymentMethod.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241106084828_createTablePaymentMethod.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241106084828_createTablePaymentMethod.cs",
@@ -824,7 +857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "20241106084951_editTableBooking.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241106084951_editTableBooking.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241106084951_editTableBooking.cs",
@@ -836,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "20241106105639_editTableBooking3.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241106105639_editTableBooking3.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241106105639_editTableBooking3.cs",
@@ -848,7 +881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "20241106104526_editTableBooking2.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241106104526_editTableBooking2.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241106104526_editTableBooking2.cs",
@@ -860,7 +893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "20241106083355_editTableBookings.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241106083355_editTableBookings.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241106083355_editTableBookings.cs",
@@ -872,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "AddScheduleRequest.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddScheduleRequest.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddScheduleRequest.cs",
@@ -884,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "20241106074950_createTableBookingForeignKey.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241106074950_createTableBookingForeignKey.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241106074950_createTableBookingForeignKey.cs",
@@ -896,7 +929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "20241106074530_createTableBooking.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241106074530_createTableBooking.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241106074530_createTableBooking.cs",
@@ -908,7 +941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "DA_K12_Tour.http",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\DA_K12_Tour.http",
               "RelativeDocumentMoniker": "DA_K12_Tour\\DA_K12_Tour.http",
@@ -920,19 +953,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "AddCategoryRequestDTO.cs",
-              "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddCategoryRequestDTO.cs",
-              "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddCategoryRequestDTO.cs",
-              "ToolTip": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddCategoryRequestDTO.cs",
-              "RelativeToolTip": "DA_K12_Tour\\Models\\DTO\\AddCategoryRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T05:22:49.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "20241105032636_createTableSchedule.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241105032636_createTableSchedule.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241105032636_createTableSchedule.cs",
@@ -944,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "TourDTO.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\TourDTO.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\TourDTO.cs",
@@ -956,7 +977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "20241027090921_addtourImage2.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241027090921_addtourImage2.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241027090921_addtourImage2.cs",
@@ -968,7 +989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "ImageDTO.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\ImageDTO.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\ImageDTO.cs",
@@ -980,7 +1001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "AddImageDTO.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\AddImageDTO.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\AddImageDTO.cs",
@@ -992,7 +1013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "20241027112855_addtourImage23.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241027112855_addtourImage23.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241027112855_addtourImage23.cs",
@@ -1004,7 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "20241027081755_stringPrice.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027081755_stringPrice.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027081755_stringPrice.cs",
@@ -1016,7 +1037,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "20241027082700_addtourImage.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027082700_addtourImage.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027082700_addtourImage.cs",
@@ -1028,7 +1049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "20241027083046_addtourImage.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Migrations\\20241027083046_addtourImage.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Migrations\\20241027083046_addtourImage.cs",
@@ -1040,7 +1061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "20241027062610_editTableName.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027062610_editTableName.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027062610_editTableName.cs",
@@ -1052,7 +1073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "20241027065508_initDb.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027065508_initDb.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027065508_initDb.cs",
@@ -1064,7 +1085,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "20241027070210_initDb.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027070210_initDb.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027070210_initDb.cs",
@@ -1076,7 +1097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "20241027070354_initDb.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027070354_initDb.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027070354_initDb.cs",
@@ -1088,7 +1109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\User.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\User.cs",
@@ -1100,7 +1121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "20241027062839_editTableName.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027062839_editTableName.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027062839_editTableName.cs",
@@ -1112,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "20241027062326_editTableName.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027062326_editTableName.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241027062326_editTableName.cs",
@@ -1124,7 +1145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12\\DA_K12_Tour_BE\\DA_K12_Tour\\Models\\DTO\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "DA_K12_Tour\\Models\\DTO\\LoginRequestDTO.cs",
@@ -1136,7 +1157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "20241022050221_addtable.cs",
               "DocumentMoniker": "D:\\DA\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241022050221_addtable.cs",
               "RelativeDocumentMoniker": "..\\..\\DA_K12_Tour\\DA_K12_Tour\\Migrations\\20241022050221_addtable.cs",

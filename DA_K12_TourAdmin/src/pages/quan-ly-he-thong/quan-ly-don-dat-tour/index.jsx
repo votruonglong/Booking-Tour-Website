@@ -7,7 +7,8 @@ import ButtonsComponent from "@components/button-component";
 import { ReloadOutlined, PlusOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { fetchTour } from "@redux/features/system/tourSlice";
-import { fetchBooking } from "@redux/features/system/bookingSlice";
+import { fetchBooking, updateBooking } from "@redux/features/system/bookingSlice";
+import BookingForm from "./components/BookingForm";
 
 const BookingsManagement = () => {
     const dispatch = useDispatch();
@@ -17,6 +18,7 @@ const BookingsManagement = () => {
     const [searchKey, setSearchKey] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
     const [selectedRowKeys, setSelectedRowKeys] = useState([]);
+    const [editData, setEditData] = useState(null);
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [searchParams, setSearchParams] = useState({
         searchName: "",
@@ -78,29 +80,25 @@ const BookingsManagement = () => {
     // };
 
     //thêm sửa
-    // const handleSubmit = async (values) => {
-    //     setIsLoading(true);
-    //     try {
-    //         if (editData) {
-    //             await dispatch(updateCategory({ id: editData.id, ...values })).unwrap();
-    //             getListCategories()
-    //             message.success("Cập nhật thành công");
-    //         } else {
-    //             await dispatch(createCategory(values)).unwrap();
-    //             resetSearch();
-    //             message.success("Thêm mới thành công");
-    //         }
-    //         setIsModalVisible(false)
-    //         setEditData(null);
-    //         setSelectedRowKeys([]);
-    //     } catch (error) {
-    //         if (error.response && (error.response.status === 401 || error.response.status === 403)) {
-    //             navigate('/login');
-    //         }
-    //     } finally {
-    //         setIsLoading(false);
-    //     }
-    // };
+    const handleSubmit = async (values) => {
+        setIsLoading(true);
+        try {
+            if (editData) {
+                await dispatch(updateBooking({ id: editData.id, ...values })).unwrap();
+                getListBookings()
+                message.success("Cập nhật thành công");
+            }
+            setIsModalVisible(false)
+            setEditData(null);
+            setSelectedRowKeys([]);
+        } catch (error) {
+            if (error.response && (error.response.status === 401 || error.response.status === 403)) {
+                navigate('/login');
+            }
+        } finally {
+            setIsLoading(false);
+        }
+    };
     //đóng modal
     const handleCancel = () => {
         setIsModalVisible(false);
@@ -234,37 +232,10 @@ const BookingsManagement = () => {
             onClick: handleResetTable,
         },
         {
-            label: "Thêm mới",
-            type: "primary",
-            icon: <PlusOutlined />,
-            onClick: handleAdd,
-        },
-        {
             label: "Sửa",
             icon: <EditOutlined />,
             onClick: handleEdit,
             disabled: selectedRowKeys.length !== 1,
-        },
-        {
-            render: () => (
-                <Popconfirm
-                    title="Bạn có chắc chắn muốn xóa không?"
-                    onConfirm={() => handleDelete(selectedRowKeys[0])}
-                    okText="Xóa"
-                    cancelText="Hủy"
-                >
-                    <Button
-                        key="delete"
-                        type="default"
-                        danger
-                        icon={<DeleteOutlined />}
-                        loading={isLoading}
-                        disabled={selectedRowKeys.length !== 1 || isLoading}
-                    >
-                        Xóa
-                    </Button>
-                </Popconfirm>
-            ),
         },
     ];
 
@@ -299,6 +270,14 @@ const BookingsManagement = () => {
             >
                 <ButtonsComponent buttons={buttons} />
             </div>
+            <BookingForm
+                visible={isModalVisible}
+                onCancel={handleCancel}
+                onSave={handleSubmit}
+                editData={editData}
+                confirmLoading={isLoading}
+                tours={tours}
+            />
         </div>
     )
 }

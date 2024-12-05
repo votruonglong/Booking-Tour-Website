@@ -260,7 +260,7 @@ const Dashboard = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="commentCount" fill="#8884d8" name="Doanh thu" />
+                <Bar dataKey="commentCount" fill="#0088FE" name="Số lược tương tác" />
               </BarChart>
             </ResponsiveContainer>
           </Card>

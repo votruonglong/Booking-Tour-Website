@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Form, Input, Button, message, Typography, Card } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
-import logo2 from "../../assets/react.svg";
+import logo2 from "../../assets/hat.svg";
 import "./index.css";
 import { login } from '../../redux/features/auth/authSlice';
 

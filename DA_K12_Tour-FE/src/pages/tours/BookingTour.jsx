@@ -61,6 +61,7 @@ const BookingTour = () => {
         try {
             const values = await form.validateFields();
 
+            // Chuyển đổi ngày khởi hành và tổng số tiền
             if (values.departureDate) {
                 values.departureDate = values.departureDate.format("YYYY-MM-DD");
             }
@@ -68,10 +69,18 @@ const BookingTour = () => {
                 values.totalAmount = formatAmount(values.totalAmount);
             }
 
-
+            // Lưu thông tin đơn đặt hàng vào cơ sở dữ liệu
+            const bookingData = {
+                ...values,
+                tourId: selectedTour.id,
+                tourName: selectedTour.tourName,
+                adultPrice: selectedTour.adultPrice,
+                childPrice: selectedTour.childPrice,
+            };
+            const result = await dispatch(createBooking(bookingData)).unwrap(); // Tạo booking trong cơ sở dữ liệu
 
             if (selectedPaymentMethod === BANK_TRANSFER_GUID) {
-                // Xử lý thanh toán qua MoMo
+                // Xử lý thanh toán MoMo
                 const momoResponse = await dispatch(createMomoPayment({
                     orderId: `${Date.now()}-${uuidv4()}`,
                     amount: values.totalAmount,
@@ -82,15 +91,14 @@ const BookingTour = () => {
                 })).unwrap();
 
                 if (momoResponse && momoResponse.payUrl) {
-                    window.location.href = momoResponse.payUrl; // Điều hướng đến trang thanh toán MoMo
-                    return;
+                    // Chuyển hướng đến trang thanh toán MoMo
+                    window.location.href = momoResponse.payUrl;
                 } else {
                     message.error("Thanh toán MoMo không thành công.");
                 }
             } else {
-                // Xử lý thanh toán thông thường
-                const result = await dispatch(createBooking(values)).unwrap();
-                sendConfirmationEmail(values)
+                // Nếu không chọn thanh toán MoMo, chỉ cần hiển thị thông báo thành công
+                sendConfirmationEmail(values);
                 message.success("Đặt tour thành công");
                 navigate(`/booking/booking-success/${result.id}`);
             }
@@ -98,6 +106,7 @@ const BookingTour = () => {
             console.log("Failed:", errorInfo);
         }
     };
+
 
     const sendConfirmationEmail = (values) => {
         const emailData = {

@@ -16,6 +16,5 @@ namespace DA_K12_Tour.Models.DTO
         public string totalAmount { get; set; }
         public string? description { get; set; }
 
-        // Status field (enum type)
     }
 }

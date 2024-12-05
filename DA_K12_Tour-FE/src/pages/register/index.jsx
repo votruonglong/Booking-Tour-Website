@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Form, Input, Button, message, Typography, Card } from "antd";
 import { UserOutlined, LockOutlined, MailOutlined, PhoneOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
-import logo2 from "../../assets/react.svg";
+import logo2 from "../../assets/hat.svg";
 import "./index.css";
 import { login, register } from '../../redux/features/auth/authSlice';
 
@@ -120,7 +120,7 @@ const Register = () => {
                         </Button>
                     </Form.Item>
                     <div className="login-links">
-                        <Link to="/register">Đăng nhập</Link>
+                        <Link to="/login">Đăng nhập</Link>
                         <Link to="/forgot-password">Quên mật khẩu?</Link>
                     </div>
                 </Form>

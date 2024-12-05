@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DA_K12_Tour")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17dc60d23a1c183a4be871bf921b2dc87af85fcf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+052f895b986d0cab43b2a70a0026c60d33b03f44")]
 [assembly: System.Reflection.AssemblyProductAttribute("DA_K12_Tour")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DA_K12_Tour")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,6 +8,7 @@ import { fetchTourById } from '../../redux/features/system/tourSlice';
 import CommentComponent from '../../components/comment-component';
 import { getScheduleByTour } from '../../redux/features/system/scheduleSlice';
 import { getCommentByTourId } from '../../redux/features/system/commentSlice';
+import { CarryOutOutlined } from '@ant-design/icons'
 
 
 const { Title, Text, Paragraph } = Typography;
@@ -166,7 +167,7 @@ const TourDetail = () => {
                                         adultPrice={selectedTour?.adultPrice}
                                         loading={loading} />
                                     <Button type="primary" size="large" style={{ marginTop: '20px', alignItems: "end" }}>
-                                        <Link to={`/booking/${selectedTour?.id}`}>Đặt chỗ</Link>
+                                        <Link to={`/booking/${selectedTour?.id}`}><CarryOutOutlined /> Đặt chỗ</Link>
                                     </Button>
                                 </div>
                             </div>
